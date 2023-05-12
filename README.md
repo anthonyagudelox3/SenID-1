@@ -15,7 +15,7 @@ Key features of this project include:
 
 In this project, we utilize both human and mouse cell data collected in-house, which allows for the development of a more diverse and versatile classification system that can be applied to a wide range of cell types and organisms.
 
-We currently have two branches, Main and DNN. Main contains compeltley functioning and working code, while DNN contains work-in-progress DNN architecture. When DNN is finished the branches will be merged.
+We currently have two branches, Main and DNN. Main contains functioning and working code, while DNN contains work-in-progress DNN architecture. When DNN is finished the branches will be merged.
 
 ## Table of Contents
 - [Getting started](#getting-started)
