@@ -67,11 +67,11 @@ python main.py
 
 ## Code Overview
 - `main.py`: The main script that runs the entire process of loading data, training, and evaluating the model. It also handles the combination of different datasets (human and mice) and the selection of CNN models for training.
-- `preprocess.py`: Contains functions for loading, resizing, and cropping images.
+- `preprocess.py`: Contains functions for loading, resizing, and cropping images and generating DNN feature data.
 - `CNN_Model.py`: Contains functions for loading and processing images, building and training CNN models based on custom architecture or ResNet50.
 - `utils.py`: Contains utility functions for generating subfolder names, making predictions, evaluating models, further cropping, and explaining model predictions using LIME.
 - `visuals.py`: Contains functions for visualizing the model's training history, creating confusion matrices, plotting ROC curves, plotting precision-recall curves, and displaying LIME explanations.
-
+- `DNN_Model.py`:  Contains functions for loading and processing images-to-tabular data and building and training DNN model based on custom architecture. Work in progress.
 
 ## Contributing
 
@@ -79,4 +79,4 @@ We encourage and welcome contributions from the community. If you'd like to cont
 
 ## Further Improvements
 
-We are currently working on creating a feature-based DNN. When finsihed, it will be updated along with the rest of the code. 
+We are currently working on creating a feature-based DNN and combining this with our pre-trained ResNet50 CNN to create a multi-model CNN. When finsihed, it will be updated along with the rest of the code. 
