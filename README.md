@@ -22,6 +22,7 @@ In this project, we utilize both human and mouse cell data collected in-house, w
 - [Usage](#usage)
 - [Code Overview](#code-overview)
 - [Contributing](#contributing)
+- [Further Improvements](#further-improvements)
 
 ## Getting Started
 
@@ -75,3 +76,7 @@ python main.py
 ## Contributing
 
 We encourage and welcome contributions from the community. If you'd like to contribute to the SenID project, please feel free to fork the repository, create a new branch, and submit a pull request with your proposed changes.
+
+## Further Improvements
+
+We are currently working on creating a feature-based DNN. When finsihed, it will be updated along with the rest of the code. 
