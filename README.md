@@ -15,6 +15,8 @@ Key features of this project include:
 
 In this project, we utilize both human and mouse cell data collected in-house, which allows for the development of a more diverse and versatile classification system that can be applied to a wide range of cell types and organisms.
 
+We currently have two branches, Main and DNN. Main contains compeltley functioning and working code, while DNN contains work-in-progress DNN architecture. When DNN is finished the branches will be merged.
+
 ## Table of Contents
 - [Getting started](#getting-started)
 - [Requirements](#requirements)
@@ -22,6 +24,7 @@ In this project, we utilize both human and mouse cell data collected in-house, w
 - [Usage](#usage)
 - [Code Overview](#code-overview)
 - [Contributing](#contributing)
+- [Further Improvements](#further-improvements)
 
 ## Getting Started
 
@@ -66,12 +69,16 @@ python main.py
 
 ## Code Overview
 - `main.py`: The main script that runs the entire process of loading data, training, and evaluating the model. It also handles the combination of different datasets (human and mice) and the selection of CNN models for training.
-- `preprocess.py`: Contains functions for loading, resizing, and cropping images.
+- `preprocess.py`: Contains functions for loading, resizing, and cropping images and generating DNN feature data - only in DNN branch.
 - `CNN_Model.py`: Contains functions for loading and processing images, building and training CNN models based on custom architecture or ResNet50.
 - `utils.py`: Contains utility functions for generating subfolder names, making predictions, evaluating models, further cropping, and explaining model predictions using LIME.
 - `visuals.py`: Contains functions for visualizing the model's training history, creating confusion matrices, plotting ROC curves, plotting precision-recall curves, and displaying LIME explanations.
-
+- `DNN_Model.py`:  Contains functions for loading and processing images-to-tabular data and building and training DNN model based on custom architecture. Work in progress and currently only in DNN branch
 
 ## Contributing
 
 We encourage and welcome contributions from the community. If you'd like to contribute to the SenID project, please feel free to fork the repository, create a new branch, and submit a pull request with your proposed changes.
+
+## Further Improvements
+
+We are currently working on creating a feature-based DNN and combining this with our pre-trained ResNet50 CNN to create a multi-model CNN. When finished, it will be updated along with the rest of the code. 
